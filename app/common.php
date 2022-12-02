@@ -11,3 +11,14 @@ if (!function_exists('asset')) {
         return $root . '/' . ltrim($path, '/') . '?v=' . RELEASE;
     }
 }
+
+if (!function_exists('theme')) {
+    /**
+     * @param string $path
+     * @return string
+     */
+    function theme(string $path = ''): string
+    {
+        return asset('themes/default/' . ltrim($path, '/'));
+    }
+}
