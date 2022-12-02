@@ -1,7 +1,7 @@
 <?php
 declare (strict_types = 1);
 
-namespace app;
+namespace app\controller;
 
 use think\App;
 use think\exception\ValidateException;
@@ -10,7 +10,7 @@ use think\Validate;
 /**
  * 控制器基础类
  */
-abstract class BaseController
+abstract class Controller
 {
     /**
      * Request实例
