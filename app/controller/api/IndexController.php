@@ -16,6 +16,6 @@ class IndexController extends BaseController
      */
     public function index(): Json
     {
-        return json(['a']);
+        return $this->success(['a']);
     }
 }
