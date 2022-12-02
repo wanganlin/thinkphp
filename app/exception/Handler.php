@@ -1,4 +1,7 @@
 <?php
+
+declare(strict_types=1);
+
 namespace app\exception;
 
 use think\db\exception\DataNotFoundException;
@@ -17,6 +20,7 @@ class Handler extends Handle
 {
     /**
      * 不需要记录信息（日志）的异常类列表
+     *
      * @var array
      */
     protected $ignoreReport = [
@@ -30,8 +34,7 @@ class Handler extends Handle
     /**
      * 记录异常信息（包括日志或者其它方式记录）
      *
-     * @access public
-     * @param  Throwable $exception
+     * @param  Throwable  $exception
      * @return void
      */
     public function report(Throwable $exception): void
@@ -43,9 +46,8 @@ class Handler extends Handle
     /**
      * Render an exception into an HTTP response.
      *
-     * @access public
-     * @param \think\Request   $request
-     * @param Throwable $e
+     * @param  \think\Request  $request
+     * @param  Throwable  $e
      * @return Response
      */
     public function render($request, Throwable $e): Response
