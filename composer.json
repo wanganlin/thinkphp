@@ -1,19 +1,29 @@
 {
     "name": "incite/phpcms",
     "type": "project",
-    "description": "the new thinkphp framework",
-    "keywords": [
-        "thinkphp",
-        "phpcms"
-    ],
+    "description": "the new php cms.",
+    "keywords": ["phpcms", "php", "cms"],
+    "homepage": "https://www.shincite.com/phpcms",
     "license": "Apache-2.0",
     "require": {
-        "php": ">=7.2.5",
+        "php": "^8.1",
+        "aliyuncs/oss-sdk-php": "^2.6",
+        "overtrue/easy-sms": "^2.2",
+        "overtrue/pinyin": "^5.0",
+        "overtrue/socialite": "^3.5",
         "topthink/framework": "^6.1.0",
+        "topthink/think-captcha": "^3.0",
+        "topthink/think-image": "^1.0",
+        "topthink/think-migration": "^3.0",
         "topthink/think-orm": "^2.0",
-        "topthink/think-filesystem": "^1.0"
+        "topthink/think-filesystem": "^1.0",
+        "topthink/think-queue": "^3.0",
+        "topthink/think-view": "^1.0",
+        "w7corp/easywechat": "^6.7",
+        "yansongda/pay": "^3.1"
     },
     "require-dev": {
+        "laravel/pint": "^1.2",
         "symfony/var-dumper": "^4.2",
         "topthink/think-trace": "^1.0"
     },
@@ -22,13 +32,20 @@
             "app\\": "app/"
         }
     },
-    "config": {
-        "preferred-install": "dist"
-    },
     "scripts": {
         "post-autoload-dump": [
-            "@php think service:discover",
-            "@php think vendor:publish"
+            "@php artisan service:discover",
+            "@php artisan vendor:publish"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ]
-    }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
