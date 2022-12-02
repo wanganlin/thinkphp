@@ -4,15 +4,15 @@ declare(strict_types=1);
 
 namespace app\controller;
 
+use app\response\JsonResponse;
 use think\App;
 use think\Request;
 use think\Validate;
 
-/**
- * Class Controller
- */
 abstract class Controller
 {
+    use JsonResponse;
+
     /**
      * 应用实例
      *
