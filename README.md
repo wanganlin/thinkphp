@@ -20,7 +20,7 @@
 ## 安装
 
 ```
-composer create-project incite/phpcms
+composer create-project jbcms/jbcms
 ```
 
 ## 目录结构

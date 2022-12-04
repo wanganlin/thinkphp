@@ -1,9 +1,9 @@
 {
-    "name": "incite/phpcms",
+    "name": "jbcms/jbcms",
     "type": "project",
     "description": "the new php cms.",
-    "keywords": ["phpcms", "php", "cms"],
-    "homepage": "https://www.shincite.com/phpcms",
+    "keywords": ["jbcms", "php",  "mysql", "cms"],
+    "homepage": "https://www.jbcms.com",
     "license": "Apache-2.0",
     "require": {
         "php": "^8.1",
