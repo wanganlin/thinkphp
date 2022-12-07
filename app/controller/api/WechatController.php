@@ -2,17 +2,12 @@
 
 namespace app\controller\api;
 
-use app\message\MessageHandler;
 use app\service\wechat\WechatService;
 use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
 use EasyWeChat\OfficialAccount\Application;
 use ReflectionException;
 use think\facade\Log;
 
-/**
- * Class WechatController
- * @package app\controller\api
- */
 class WechatController extends BaseController
 {
     /**

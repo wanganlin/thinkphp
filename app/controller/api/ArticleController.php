@@ -4,10 +4,6 @@ namespace app\controller\api;
 
 use think\response\Json;
 
-/**
- * Class ArticleController
- * @package app\controller\api
- */
 class ArticleController extends BaseController
 {
     /**

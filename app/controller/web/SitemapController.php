@@ -4,10 +4,6 @@ namespace app\controller\web;
 
 use think\response\View;
 
-/**
- * Class SitemapController
- * @package app\controller\web
- */
 class SitemapController extends BaseController
 {
     /**

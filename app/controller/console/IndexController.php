@@ -17,6 +17,15 @@ class IndexController extends BaseController
     }
 
     /**
+     * 起始页
+     * @return Renderable
+     */
+    public function dashboard(): Renderable
+    {
+        return view('index.dashboard');
+    }
+
+    /**
      * @return Json
      */
     public function logout(): Json

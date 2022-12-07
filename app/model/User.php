@@ -18,4 +18,12 @@ class User extends Model
      */
     protected $pk = 'id';
 
+    /**
+     * @return BelongsToMany
+     */
+    public function roles(): BelongsToMany
+    {
+        return $this->belongsToMany(AuthGroup::class, AuthGroupAccess::class);
+    }
+
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace app\manager\oauth;
+namespace app\service\oauth;
 
 use app\service\user\UserService;
 use app\service\wechat\WechatService;
@@ -11,10 +11,6 @@ use think\Request;
 use think\response\Json;
 use think\response\Redirect;
 
-/**
- * Class Wechat
- * @package app\manager\oauth
- */
 class Wechat
 {
     /**
