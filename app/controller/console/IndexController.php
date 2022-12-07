@@ -15,4 +15,13 @@ class IndexController extends BaseController
     {
         return view('index');
     }
+
+    /**
+     * @return Json
+     */
+    public function logout(): Json
+    {
+        session('auth_console', null);
+        return $this->succeed('logout');
+    }
 }

@@ -1,0 +1,24 @@
+<?php
+
+namespace app\controller\api;
+
+use think\response\Json;
+
+/**
+ * Class ArticleController
+ * @package app\controller\api
+ */
+class ArticleController extends BaseController
+{
+    /**
+     * @OA\Get(
+     *     path="/api/article",
+     *     @OA\Response(response="200", description="An example resource")
+     * )
+     * @return Json
+     */
+    public function index(): Json
+    {
+        return $this->succeed('article');
+    }
+}
