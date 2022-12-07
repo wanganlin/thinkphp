@@ -1,7 +1,7 @@
 {
     "name": "jbcms/jbcms",
     "type": "project",
-    "description": "the new php cms.",
+    "description": "🛠 PHP Enterprise Information Management System",
     "keywords": ["jbcms", "php",  "mysql", "cms"],
     "homepage": "https://www.jbcms.com",
     "license": "Apache-2.0",
@@ -10,7 +10,6 @@
         "aliyuncs/oss-sdk-php": "^2.6",
         "overtrue/easy-sms": "^2.2",
         "overtrue/pinyin": "^5.0",
-        "overtrue/socialite": "^3.5",
         "topthink/framework": "^6.1.0",
         "topthink/think-captcha": "^3.0",
         "topthink/think-image": "^1.0",
@@ -24,8 +23,9 @@
     },
     "require-dev": {
         "laravel/pint": "^1.2",
-        "symfony/var-dumper": "^4.2",
-        "topthink/think-trace": "^1.0"
+        "symfony/var-dumper": "^6.0"
+        "topthink/think-trace": "^1.0",
+        "zircote/swagger-php": "^4.1"
     },
     "autoload": {
         "psr-4": {
@@ -34,6 +34,7 @@
     },
     "scripts": {
         "post-autoload-dump": [
+            "app\\support\\ComposerScripts::postAutoloadDump",
             "@php artisan service:discover",
             "@php artisan vendor:publish"
         ],

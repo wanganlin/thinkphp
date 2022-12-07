@@ -26,9 +26,9 @@ return [
             // 服务器地址
             'hostname' => env('DB_HOST', '127.0.0.1'),
             // 数据库名
-            'database' => env('DB_DATABASE', ''),
+            'database' => env('DB_DATABASE', 'forge'),
             // 用户名
-            'username' => env('DB_USERNAME', 'root'),
+            'username' => env('DB_USERNAME', 'forge'),
             // 密码
             'password' => env('DB_PASSWORD', ''),
             // 端口
@@ -36,7 +36,7 @@ return [
             // 数据库连接参数
             'params' => [],
             // 数据库编码默认采用utf8
-            'charset' => env('DB_CHARSET', 'utf8'),
+            'charset' => 'utf8mb4',
             // 数据库表前缀
             'prefix' => env('DB_PREFIX', ''),
 
