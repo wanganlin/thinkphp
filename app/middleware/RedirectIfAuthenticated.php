@@ -8,9 +8,6 @@ use Closure;
 use think\Request;
 use think\Response;
 
-/**
- * Class RedirectIfAuthenticated
- */
 class RedirectIfAuthenticated
 {
     /**

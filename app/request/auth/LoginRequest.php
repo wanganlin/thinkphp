@@ -1,12 +1,9 @@
 <?php
 
-namespace app\request\user\auth;
+namespace app\request\auth;
 
 use think\Validate;
 
-/**
- * Class LoginRequest
- */
 class LoginRequest extends Validate
 {
     /**

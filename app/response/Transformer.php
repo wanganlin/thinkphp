@@ -2,10 +2,6 @@
 
 namespace app\response;
 
-/**
- * Class Transformer
- * @package app\response
- */
 abstract class Transformer
 {
     /**

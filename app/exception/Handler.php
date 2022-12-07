@@ -13,9 +13,6 @@ use think\exception\ValidateException;
 use think\Response;
 use Throwable;
 
-/**
- * 应用异常处理类
- */
 class Handler extends Handle
 {
     /**

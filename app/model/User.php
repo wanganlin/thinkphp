@@ -6,9 +6,6 @@ namespace app\model;
 
 use think\Model;
 
-/**
- * Class User
- */
 class User extends Model
 {
     /**

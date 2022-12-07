@@ -6,9 +6,6 @@ namespace app\provider;
 
 use think\Service as ServiceProvider;
 
-/**
- * 应用服务类
- */
 class AppServiceProvider extends ServiceProvider
 {
     public function register()

@@ -6,9 +6,6 @@ namespace app\controller\console;
 
 use think\response\View;
 
-/**
- * Class IndexController
- */
 class IndexController extends BaseController
 {
     /**

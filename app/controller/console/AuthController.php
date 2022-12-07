@@ -6,16 +6,15 @@ namespace app\controller\console;
 
 use app\controller\Controller;
 use app\middleware\RedirectIfAuthenticated;
-use app\request\console\auth\LoginRequest;
+use app\request\auth\ForgetRequest;
+use app\request\auth\LoginRequest;
+use app\request\auth\ResetRequest;
 use think\exception\ValidateException;
 use think\Request;
 use think\response\Json;
 use think\response\Redirect;
 use think\response\View;
 
-/**
- * Class AuthController
- */
 class AuthController extends Controller
 {
     /**
@@ -43,7 +42,7 @@ class AuthController extends Controller
             try {
                 validate(LoginRequest::class)->check($request->post());
             } catch (ValidateException $e) {
-                return json(['error' => $e->getError()]);
+                return $this->error($e->getError());
             }
         }
 
@@ -51,18 +50,36 @@ class AuthController extends Controller
     }
 
     /**
+     * @param Request $request
      * @return Json|View
      */
-    public function forgot(): Json|View
+    public function forgot(Request $request): Json|View
     {
+        if ($request->isPost()) {
+            try {
+                validate(ForgetRequest::class)->check($request->post());
+            } catch (ValidateException $e) {
+                return $this->error($e->getError());
+            }
+        }
+
         return view('forgot');
     }
 
     /**
+     * @param Request $request
      * @return Json|View
      */
-    public function reset(): Json|View
+    public function reset(Request $request): Json|View
     {
+        if ($request->isPost()) {
+            try {
+                validate(ResetRequest::class)->check($request->post());
+            } catch (ValidateException $e) {
+                return $this->error($e->getError());
+            }
+        }
+
         return view('reset');
     }
 }

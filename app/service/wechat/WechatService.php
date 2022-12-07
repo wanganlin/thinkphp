@@ -6,9 +6,6 @@ use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
 use EasyWeChat\OfficialAccount\Application;
 use think\facade\Log;
 
-/**
- * Class WechatService
- */
 class WechatService
 {
     /**

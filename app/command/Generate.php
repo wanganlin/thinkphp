@@ -10,9 +10,6 @@ use think\console\input\Argument;
 use think\console\input\Option;
 use think\console\Output;
 
-/**
- * Class Generate
- */
 class Generate extends Command
 {
     protected function configure()

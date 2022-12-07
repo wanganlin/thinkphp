@@ -7,9 +7,6 @@ namespace app\controller\web;
 use app\controller\Controller;
 use think\facade\Config;
 
-/**
- * Class BaseController
- */
 abstract class BaseController extends Controller
 {
     protected function initialize()

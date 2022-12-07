@@ -1,4 +1,4 @@
-# PHPCMS
+# JBCMS
 
 > 运行环境要求PHP8.1
 
@@ -102,7 +102,7 @@ http://localhost:8000/
 
 ## 在线文档
 
-[浏览文档](https://www.shincite.com/phpcms/docs)
+[浏览文档](https://docs.jbcms.com)
 
 ## 版权信息
 

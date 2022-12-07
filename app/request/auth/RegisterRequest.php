@@ -1,13 +1,10 @@
 <?php
 
-namespace app\request\console\auth;
+namespace app\request\auth;
 
 use think\Validate;
 
-/**
- * Class LoginRequest
- */
-class LoginRequest extends Validate
+class RegisterRequest extends Validate
 {
     /**
      * @var array

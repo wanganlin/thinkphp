@@ -6,9 +6,6 @@ namespace app\controller\api;
 
 use app\controller\Controller;
 
-/**
- * Class BaseController
- */
 abstract class BaseController extends Controller
 {
 }

@@ -7,9 +7,6 @@ namespace app\controller\user;
 use app\controller\Controller;
 use app\middleware\Authenticate;
 
-/**
- * Class BaseController
- */
 abstract class BaseController extends Controller
 {
     /**
