@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans">
 <head>
     <meta charset="UTF-8">
-    <title>Reset</title>
+    <title>Exception</title>
 </head>
 <body>
-reset page.
+Error page.
 </body>
 </html>
